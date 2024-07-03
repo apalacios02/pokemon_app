@@ -10,4 +10,7 @@
   <% @pokemons.each do |pokemon| %>
     <li><%= link_to pokemon['name'], pokemon_show_path(pokemon['name']) %></li>
   <% end %>
+
+   <!-- Link to Held Items tab -->
+  <li><%= link_to "Held Items", held_items_path %></li>
 </ul>

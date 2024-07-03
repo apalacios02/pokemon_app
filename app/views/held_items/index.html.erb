@@ -1,0 +1,8 @@
+<h1>Pokémon Held Items</h1>
+<ul>
+  <% @held_items.each do |held_item| %>
+    <li>
+      <%= link_to held_item.name, held_item %>
+    </li>
+  <% end %>
+</ul>
